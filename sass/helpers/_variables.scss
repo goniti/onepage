@@ -1,0 +1,25 @@
+//  Colors
+$black: #000;
+$white: #fff;
+$grey: #222;
+$silver: #b2b2b2;
+$darkgrey: #272320;
+$orange-dark: #aa7606;
+
+// Parameters
+$hover: $silver;
+$background-theme-dark: $grey;
+$color-theme-light: $white;
+$color-theme-1: $orange-dark;  
+// Responsiv
+
+$breakpoints: (
+  "phone": 400px,
+  "phone-wide": 480px,
+  "phablet": 560px,
+  "tablet-small": 640px,
+  "tablet": 768px,
+  "tablet-wide": 1024px,
+  "desktop": 1248px,
+  "desktop-wide": 1440px
+);

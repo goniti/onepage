@@ -1,0 +1,65 @@
+@media only screen and (max-width: 800px) {
+  .menu {
+    position: relative;
+    width: 100%;
+    &-items {
+      display: none;
+      position: absolute;
+      width: 100%;
+      margin-top: 160px;
+      background-color: #1a1c1e;
+      margin-right: 0;
+    }
+  }
+  .show,
+  .hide {
+    position: absolute;
+    top: 0;
+    right: 15px;
+  }
+  .show {
+    display: inline-block;
+  }
+  .hide {
+    display: none;
+  }
+  #menu:target .show {
+    display: none;
+  }
+  #menu:target .hide,
+  #menu:target .menu-items {
+    display: inline-block;
+  }
+  .menu ul a,
+  .menu ul a:visited {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu ul a:hover,
+  .menu ul a:target {
+    padding: 0 20px;
+  }
+}
+
+  @media screen and (max-width: 640px) {
+    .hero__layers {
+      margin: 0;
+      padding: 15px;
+      &-title {
+        font-size: 65px;
+      }
+      &-presentation {
+        font-size: 25px;
+      }
+    }
+  }
+
+@media only screen and (max-width: 220px) {
+  .sitename,
+  .show,
+  .hide {
+    font-size: 14px;
+  }
+}

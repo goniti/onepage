@@ -1,0 +1,10 @@
+@mixin edit-font($size: false, $colour: false, $weight: false,  $lh: false) {
+    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+    @if $weight { font-weight: $weight; }
+    @if $size { font-size: $size; }
+    @if $colour { color: $colour; }
+    @if $lh { line-height: $lh; }
+    @if $ls { letter-spacing: $ls; }
+    @if $tf { text-transform: $tf; }
+    @if $fs { font-style: $fs; }
+}

@@ -1,0 +1,491 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/base/_base.scss */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  background-color: #000;
+}
+
+/* line 6, ../sass/base/_base.scss */
+p {
+  font-size: 14px;
+}
+
+/* line 9, ../sass/base/_base.scss */
+a {
+  text-decoration: none;
+  outline: 0 auto;
+  border: 0;
+}
+
+/* line 20, ../sass/base/_base.scss */
+h2 {
+  font-size: 9.1px;
+  line-height: 10px;
+  color: #b2b2b2;
+}
+
+/* line 26, ../sass/base/_base.scss */
+h3 {
+  color: #000;
+  text-shadow: 0px 0px 100px grey;
+  font-size: 75px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* line 1, ../sass/components/_navbar.scss */
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 80px;
+  background-color: #1a1c1e;
+}
+
+/* navigation menu  */
+/* line 13, ../sass/components/_navbar.scss */
+.fixed-nav-bar li,
+.fixed-nav-bar a {
+  height: 50px;
+  line-height: 50px;
+}
+
+/* line 18, ../sass/components/_navbar.scss */
+.menu {
+  text-transform: uppercase;
+  color: #b2b2b2;
+  height: 100%;
+}
+/* line 22, ../sass/components/_navbar.scss */
+.menu:hover,
+.menu :first-child {
+  color: #aa7606;
+}
+
+/* line 27, ../sass/components/_navbar.scss */
+.menu ul a,
+.menu ul a:visited {
+  color: #ffffff;
+  padding: 0 20px;
+}
+
+/* line 32, ../sass/components/_navbar.scss */
+.menu ul a:hover,
+.menu ul a:target {
+  color: #aa7606;
+  padding: 20px;
+  border: solid 1px #aa7606;
+}
+
+/* line 38, ../sass/components/_navbar.scss */
+.menu-items {
+  display: flex;
+  margin-right: 30px;
+  font-size: 15px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+/* line 46, ../sass/components/_navbar.scss */
+.sitename {
+  display: inline-block;
+  margin: auto 30px;
+  z-index: 0;
+}
+
+/* line 51, ../sass/components/_navbar.scss */
+a.sitename,
+a:visited.sitename {
+  color: #aa7606;
+}
+/* line 54, ../sass/components/_navbar.scss */
+a.sitename h1,
+a:visited.sitename h1 {
+  font-size: 38.5px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+/* line 61, ../sass/components/_navbar.scss */
+.menu-items a {
+  text-decoration: none;
+}
+
+/* line 64, ../sass/components/_navbar.scss */
+.show,
+.hide {
+  display: none;
+  padding-left: 15px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center left;
+  color: #dde1e2;
+}
+
+/* line 1, ../sass/components/_swipper.scss */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 6, ../sass/components/_swipper.scss */
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 13, ../sass/components/_swipper.scss */
+.swiper-slide > .swiper-slide-cover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: transparent no-repeat 50% 50% / cover;
+}
+
+/* line 21, ../sass/components/_swipper.scss */
+.swiper-container {
+  height: 98.8vh;
+}
+
+/* line 24, ../sass/components/_swipper.scss */
+.swiper-slide .slide1 {
+  background-image: url(https://picsum.photos/id/129/4910/3252);
+  transform-origin: 0 100%;
+  background: center top left;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+/* line 31, ../sass/components/_swipper.scss */
+.swiper-slide .slide2 {
+  background-image: url(https://picsum.photos/id/220/3872/2416);
+  transform-origin: 100% 100%;
+  background: center top left;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+/* line 38, ../sass/components/_swipper.scss */
+.swiper-slide .slide3 {
+  background-image: url(https://picsum.photos/id/1037/5760/3840);
+  transform-origin: 100% 0;
+}
+
+/* line 43, ../sass/components/_swipper.scss */
+.swiper-slide .slide4 {
+  background-image: url(https://picsum.photos/id/134/4928/3264);
+  transform-origin: 0 100%;
+}
+
+/* line 47, ../sass/components/_swipper.scss */
+.swiper-slide .slide5 {
+  background-image: url(https://picsum.photos/id/145/4288/2848);
+  transform-origin: 100% 100%;
+}
+
+/* line 52, ../sass/components/_swipper.scss */
+.swiper-scale-effect .swiper-slide-cover {
+  transition: 10s ease-out;
+  transform: scale(1.2);
+}
+
+/* line 56, ../sass/components/_swipper.scss */
+.swiper-slide .swiper-slide-duplicate .swiper-slide-active .swiper-slide-duplicate-prev {
+  position: fixed;
+}
+
+/* line 59, ../sass/components/_swipper.scss */
+.swiper-slide .swiper-slide-duplicate .swiper-slide-active .swiper-slide-duplicate-next {
+  position: fixed;
+}
+
+/* line 63, ../sass/components/_swipper.scss */
+.swiper-scale-effect .swiper-slide.swiper-slide-active .swiper-slide-cover {
+  transform: scale(1);
+}
+
+/* line 67, ../sass/components/_swipper.scss */
+.swiper-button-prev {
+  filter: invert(80%) sepia(24%) saturate(0%) hue-rotate(261deg) brightness(85%) contrast(93%);
+}
+
+/* line 70, ../sass/components/_swipper.scss */
+.swiper-button-next {
+  filter: invert(80%) sepia(24%) saturate(0%) hue-rotate(261deg) brightness(85%) contrast(93%);
+}
+
+/* line 2, ../sass/pages/_featured.scss */
+.hero__content {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+/* line 7, ../sass/pages/_featured.scss */
+.hero__layers {
+  margin: 2.5rem;
+  text-align: justify;
+}
+/* line 10, ../sass/pages/_featured.scss */
+.hero__layers-presentation {
+  color: #fff;
+  font-size: 27px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+/* line 16, ../sass/pages/_featured.scss */
+.hero__layers-presentation span {
+  color: #000;
+  font-size: 17px;
+}
+/* line 21, ../sass/pages/_featured.scss */
+.hero__layers-description {
+  max-width: 22em;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #000;
+  font-style: italic;
+  color: #b2b2b2;
+  line-height: 20px;
+}
+/* line 29, ../sass/pages/_featured.scss */
+.hero__layers-description strong {
+  color: #aa7606;
+  font-weight: bold;
+}
+/* line 34, ../sass/pages/_featured.scss */
+.hero__layers-project {
+  padding-bottom: 10px;
+}
+/* line 36, ../sass/pages/_featured.scss */
+.hero__layers-project a {
+  color: #b2b2b2;
+}
+/* line 40, ../sass/pages/_featured.scss */
+.hero__layers--background {
+  background-color: #222;
+  padding: 20px;
+  border-bottom-left-radius: 40px 40px;
+  border-top-right-radius: 40px 40px;
+}
+
+/* line 48, ../sass/pages/_featured.scss */
+footer {
+  height: 10px;
+  background-color: #1a1c1e;
+  border-top: 1px solid #252729;
+  position: relative;
+}
+
+/* line 55, ../sass/pages/_featured.scss */
+.bar1,
+.bar2,
+.bar3 {
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* line 66, ../sass/pages/_featured.scss */
+.change.bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+/* line 71, ../sass/pages/_featured.scss */
+.change.bar2 {
+  opacity: 0;
+}
+
+/* line 75, ../sass/pages/_featured.scss */
+.change.bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* line 1, ../sass/layouts/_grid.scss */
+.hero__content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+/* line 6, ../sass/layouts/_grid.scss */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+  /* line 2, ../sass/layouts/_responsive.scss */
+  .menu {
+    position: relative;
+    width: 100%;
+  }
+  /* line 5, ../sass/layouts/_responsive.scss */
+  .menu-items {
+    display: none;
+    position: absolute;
+    width: 100%;
+    margin-top: 160px;
+    background-color: #1a1c1e;
+    margin-right: 0;
+  }
+
+  /* line 14, ../sass/layouts/_responsive.scss */
+  .show,
+  .hide {
+    position: absolute;
+    top: 0;
+    right: 15px;
+  }
+
+  /* line 20, ../sass/layouts/_responsive.scss */
+  .show {
+    display: inline-block;
+  }
+
+  /* line 23, ../sass/layouts/_responsive.scss */
+  .hide {
+    display: none;
+  }
+
+  /* line 26, ../sass/layouts/_responsive.scss */
+  #menu:target .show {
+    display: none;
+  }
+
+  /* line 29, ../sass/layouts/_responsive.scss */
+  #menu:target .hide,
+  #menu:target .menu-items {
+    display: inline-block;
+  }
+
+  /* line 33, ../sass/layouts/_responsive.scss */
+  .menu ul a,
+  .menu ul a:visited {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* line 40, ../sass/layouts/_responsive.scss */
+  .menu ul a:hover,
+  .menu ul a:target {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 640px) {
+  /* line 47, ../sass/layouts/_responsive.scss */
+  .hero__layers {
+    margin: 0;
+    padding: 15px;
+  }
+  /* line 50, ../sass/layouts/_responsive.scss */
+  .hero__layers-title {
+    font-size: 65px;
+  }
+  /* line 53, ../sass/layouts/_responsive.scss */
+  .hero__layers-presentation {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 220px) {
+  /* line 60, ../sass/layouts/_responsive.scss */
+  .sitename,
+  .show,
+  .hide {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */
