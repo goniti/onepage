@@ -103,45 +103,46 @@ h3 {
 }
 
 /* line 1, ../sass/components/_navbar.scss */
-.fixed-nav-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+.navbar {
   z-index: 9999;
   width: 100%;
   height: 80px;
   background-color: #1a1c1e;
 }
-
-/* navigation menu  */
-/* line 13, ../sass/components/_navbar.scss */
-.fixed-nav-bar li,
-.fixed-nav-bar a {
+/* line 6, ../sass/components/_navbar.scss */
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+/* line 12, ../sass/components/_navbar.scss */
+.navbar > li, .navbar a {
   height: 50px;
   line-height: 50px;
 }
 
-/* line 18, ../sass/components/_navbar.scss */
+/* navigation menu  */
+/* line 20, ../sass/components/_navbar.scss */
 .menu {
   text-transform: uppercase;
   color: #b2b2b2;
   height: 100%;
 }
-/* line 22, ../sass/components/_navbar.scss */
+/* line 24, ../sass/components/_navbar.scss */
 .menu:hover,
 .menu :first-child {
   color: #aa7606;
 }
 
-/* line 27, ../sass/components/_navbar.scss */
+/* line 29, ../sass/components/_navbar.scss */
 .menu ul a,
 .menu ul a:visited {
   color: #ffffff;
   padding: 0 20px;
 }
 
-/* line 32, ../sass/components/_navbar.scss */
+/* line 34, ../sass/components/_navbar.scss */
 .menu ul a:hover,
 .menu ul a:target {
   color: #aa7606;
@@ -149,7 +150,7 @@ h3 {
   border: solid 1px #aa7606;
 }
 
-/* line 38, ../sass/components/_navbar.scss */
+/* line 40, ../sass/components/_navbar.scss */
 .menu-items {
   display: flex;
   margin-right: 30px;
@@ -158,19 +159,19 @@ h3 {
   z-index: 1;
 }
 
-/* line 46, ../sass/components/_navbar.scss */
+/* line 48, ../sass/components/_navbar.scss */
 .sitename {
   display: inline-block;
   margin: auto 30px;
   z-index: 0;
 }
 
-/* line 51, ../sass/components/_navbar.scss */
+/* line 53, ../sass/components/_navbar.scss */
 a.sitename,
 a:visited.sitename {
   color: #aa7606;
 }
-/* line 54, ../sass/components/_navbar.scss */
+/* line 56, ../sass/components/_navbar.scss */
 a.sitename h1,
 a:visited.sitename h1 {
   font-size: 38.5px;
@@ -178,12 +179,12 @@ a:visited.sitename h1 {
   font-weight: bold;
 }
 
-/* line 61, ../sass/components/_navbar.scss */
+/* line 63, ../sass/components/_navbar.scss */
 .menu-items a {
   text-decoration: none;
 }
 
-/* line 64, ../sass/components/_navbar.scss */
+/* line 66, ../sass/components/_navbar.scss */
 .show,
 .hide {
   display: none;
@@ -415,41 +416,39 @@ footer {
     display: none;
     position: absolute;
     width: 100%;
-    margin-top: 160px;
+    top: 80px;
     background-color: #1a1c1e;
-    margin-right: 0;
+    padding-bottom: 2rem;
   }
 
   /* line 14, ../sass/layouts/_responsive.scss */
   .show,
   .hide {
-    position: absolute;
-    top: 0;
-    right: 15px;
+    margin-right: 15px;
   }
 
-  /* line 20, ../sass/layouts/_responsive.scss */
+  /* line 18, ../sass/layouts/_responsive.scss */
   .show {
     display: inline-block;
   }
 
-  /* line 23, ../sass/layouts/_responsive.scss */
+  /* line 21, ../sass/layouts/_responsive.scss */
   .hide {
     display: none;
   }
 
-  /* line 26, ../sass/layouts/_responsive.scss */
+  /* line 24, ../sass/layouts/_responsive.scss */
   #menu:target .show {
     display: none;
   }
 
-  /* line 29, ../sass/layouts/_responsive.scss */
+  /* line 27, ../sass/layouts/_responsive.scss */
   #menu:target .hide,
   #menu:target .menu-items {
     display: inline-block;
   }
 
-  /* line 33, ../sass/layouts/_responsive.scss */
+  /* line 31, ../sass/layouts/_responsive.scss */
   .menu ul a,
   .menu ul a:visited {
     padding: 0;
@@ -458,29 +457,29 @@ footer {
     justify-content: center;
   }
 
-  /* line 40, ../sass/layouts/_responsive.scss */
+  /* line 38, ../sass/layouts/_responsive.scss */
   .menu ul a:hover,
   .menu ul a:target {
     padding: 0 20px;
   }
 }
 @media screen and (max-width: 640px) {
-  /* line 47, ../sass/layouts/_responsive.scss */
+  /* line 45, ../sass/layouts/_responsive.scss */
   .hero__layers {
     margin: 0;
     padding: 15px;
   }
-  /* line 50, ../sass/layouts/_responsive.scss */
+  /* line 48, ../sass/layouts/_responsive.scss */
   .hero__layers-title {
     font-size: 65px;
   }
-  /* line 53, ../sass/layouts/_responsive.scss */
+  /* line 51, ../sass/layouts/_responsive.scss */
   .hero__layers-presentation {
     font-size: 25px;
   }
 }
 @media only screen and (max-width: 220px) {
-  /* line 60, ../sass/layouts/_responsive.scss */
+  /* line 58, ../sass/layouts/_responsive.scss */
   .sitename,
   .show,
   .hide {
